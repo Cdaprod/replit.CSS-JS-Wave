@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  
+}
+
+#bubble-wrapper {
+  height: 100%;
+  width: 100%;
+  /* background: #000; */
+  position: fixed;
+  bottom: 0px;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.bubble {
+  height: max(300px, 30vw);
+  width: max(300px, 30vw);
+  background-color: rgb(33, 150, 243);
+  border-radius: 100%;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  animation: wave 2s ease-in-out infinite; /* Remove the comma between wave and ease-in-out */
+}
+
+@keyframes wave {
+  from,
+  to {
+    transform: translate(-50%, 0%); /* Remove the space before the parentheses */
+  }
+
+  50% {
+    transform: translate(-50%, -20%); /* Remove the space before the parentheses */
+  }
+}
