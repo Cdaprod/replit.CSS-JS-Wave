@@ -6,12 +6,26 @@
   <meta name="viewport" content="width=device-width">
   <title>replit</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
-  <style>
+  <style> 
+		html {
+			height: 100%;
+			overflow: hidden;
+		}
+    section {
+			padding-left: 1.5rem;
+			padding-top: 2rem;
+			justify-content: center;
+			align-content: center;
+			
+			color: white;
+    }
     #container {
-      position: relative;
-      height: 1200px;
+      position: absolute;
+      top: -50px;
+      height: 100%;
       width: 100%;
       border: 1px solid #fff;
+	  overflow: hidden;
     }
     #bubble-wrapper {
       height: 100%;
@@ -21,7 +35,7 @@
       bottom: 10px;
       overflow: hidden;
       pointer-events: none;
-    }
+    } 
 
     .bubble {
       height: max(300px, 30vw);
@@ -49,6 +63,9 @@
 </head>
 
 <body>
+<section>
+	<h2>Header II</h2>
+</section>
 <div class="container">
 </div>
   <div id="bubble-wrapper">
